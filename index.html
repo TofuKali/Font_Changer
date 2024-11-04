@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Font Converter</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="head">
+            <h1>Font Converter</h1>
+        </div>
+        <form onsubmit="changeFont(event)">
+            <p>
+                <label class="primtxt" for="headlabel"> Enter your text here:</label>
+                <br>
+                <br>
+                <textarea id="textinput" name="textinput" rows="10" cols="60" placeholder="Enter text here"></textarea>
+                <br>
+                <br>
+                <label for="cars" class="primtxt">Choose your Font</label>
+                <select name="fonts" id="fonts">
+                    <option value=" 'Montserrat', sans-serif">Monserrat</option>
+                    <option value=" 'Roboto Condensed', sans-serif">Roboto Condensed</option>
+                    <option value=" 'Ubuntu', sans-serif">Ubuntu</option>
+                    <option value=" 'lato', sans-serif">Lato</option>
+                    <option value=" 'Cedarville Cursive',cursive">Cedarville Cursive</option>
+                </select>
+                <br>
+                <br>
+                <input type="submit" value="Submit">
+        </form>
+        <br>
+
+        <label for="output" class="primtxt">Converted Text:</label>
+        <br>
+        <br>
+        <textarea id="textoutput" name="textinput" rows="10" cols="60" placeholder="Converted Text"></textarea>
+        <br><br>
+        <footer>
+            <a href="https://www.linkedin.com/in/muhammed-ahmad-72936b9/" target="_blank">Muhammed L Ahmad</a>
+            <br><br>
+            &copy; Copyright. All rights reserved.
+        </footer>
+    </div>
+    <!-- <h1>Font Converter</h1> -->
+</body>
+<script>
+    function changeFont(event) {
+        // To prevent the page from reloading
+        event.preventDefault();
+
+        // Getting input from user text area
+        let text = document.getElementById("textinput").value;
+        console.log(text);
+        // Setting Font name frome the drop down menu
+        let Fontname = document.getElementById("fonts").value;
+        console.log(Fontname);
+
+        // This is the element that has the output text area
+        let Formattedtext = document.getElementById("textoutput");
+        console.log(Formattedtext);
+
+        // Changing text of the output area.
+        Formattedtext.innerText = text;
+
+        // adding a font for output text area
+        Formattedtext.style.fontFamily = Fontname;
+    }
+</script>
+
+</html>

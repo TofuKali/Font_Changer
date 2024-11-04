@@ -1,0 +1,83 @@
+@import url('https://fonts.googleapis.com/css2?family=Cedarville+Cursive&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: aquamarine;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    text-align: center;
+}
+
+.head{
+    justify-content: center;
+    align-items: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-align: center;
+    font-size: 3vw;
+    background-color: beige;
+    color: grey;
+    padding: 5px;
+    height: 9vw;
+    margin-bottom: 40px;
+}
+
+.primtxt{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: large;
+    margin: 20px;
+    padding: 20px;
+}
+
+textarea{
+    width: 60vw;
+    box-shadow: #3b1e1e;
+    height: 2/5fr;
+    margin: 20px;
+    border: 3px solid black;
+    padding: 10 px;
+    font-size: large;
+}
+
+input[type="submit"]{
+    width: 200px;
+    height: 50px;
+    font-size: large;
+    padding: 2px;
+    background-color: burlywood;
+    color: blue;
+    font-weight: bold;
+    border-radius: 15px;
+    box-shadow: #3b1e1e;
+}
+
+input[type="submit"]:hover{
+    background-color: aliceblue;
+}
+
+#fonts{
+    width: 30vw;
+    height: 30px;
+    font-size: large;
+    border: 2px solid black;
+    color: #3b1e1e;
+    font-weight: bold;
+}
+
+footer{
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: beige;
+    color: black;
+    text-align: center;
+    padding: 10px 0;
+    font-weight: bold;
+}
+
+a{
+    color: black;
+}
